@@ -54,5 +54,15 @@ body {
   width: 25px;
   height: 25px;
   image-rendering: optimizeQuality;
-  
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+.img-variant{
+  width: 30px;
+  height: 30px;
+  position: sticky;
+  top: 0;
+  align-items: center;
 }
