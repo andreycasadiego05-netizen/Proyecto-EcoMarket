@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+.product-grid {
+  grid-template-columns: 1fr;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Escritorio */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

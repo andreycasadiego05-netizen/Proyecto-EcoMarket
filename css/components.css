@@ -83,6 +83,13 @@
     padding:50px;
 }
 
+.productos-variant{
+    background-color: #DFD5CA;
+    gap:100px;
+    width: 75%;
+    
+}
+
 .card{
     background:white;
     border-radius:20px;
@@ -98,8 +105,8 @@
 }
 
 .card img{
-    width:100%;
-    height:300px;
+    width:70%;
+    height:400px;
 }
 
 .card h2{
@@ -125,4 +132,198 @@
     font-size:22px;
     font-weight:bold;
     margin-bottom:20px;
+}
+
+
+
+
+.catalog-wrapper{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:2.5rem;
+}
+
+.header h1{
+    font-size:2.5rem;
+    font-weight:700;
+    background:linear-gradient(135deg,rgb(72, 86, 68),rgb(54, 66, 51));
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:-0.3px;
+}
+
+.header p{
+    color:#4a5b6e;
+    margin-top:.5rem;
+    font-weight:500;
+    font-size:1.05rem;
+}
+
+.filters-system{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(8px);
+    border-radius:2rem;
+    padding:1.2rem 1.8rem;
+    margin-bottom:1.8rem;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    border:1px solid rgba(255,255,255,.6);
+}
+
+.filters-header{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-bottom:1rem;
+}
+
+.filter-label{
+    font-weight:600;
+    color:#1e2a3e;
+    background:#e9edf2;
+    padding:.3rem 1rem;
+    border-radius:40px;
+    font-size:.85rem;
+}
+
+.categories-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.7rem;
+}
+
+.filter-radio input{
+    display:none;
+}
+
+.filter-chip{
+    display:inline-block;
+    background:white;
+    border:1px solid #cfdfed;
+    padding:.5rem 1.3rem;
+    border-radius:40px;
+    font-size:.9rem;
+    font-weight:500;
+    color:#2c3e66;
+    cursor:pointer;
+    transition:.2s;
+    box-shadow:0 1px 2px rgba(0,0,0,.02);
+}
+
+.filter-radio input:checked + .filter-chip{
+    background:#2c3e66;
+    color:white;
+    border-color:#2c3e66;
+    box-shadow:0 4px 10px rgba(44,62,102,.25);
+}
+
+.filter-chip:hover{
+    background:#e6edf4;
+    transform:translateY(-1px);
+}
+
+.results-info{
+    margin:1rem 0 1.5rem;
+    text-align:center;
+    font-size:.9rem;
+    color:#000000;
+    font-weight:500;
+    border-bottom:1px dashed #cbdbe2;
+    padding-bottom:.75rem;
+    display:inline-block;
+    font-weight: bold;
+}
+
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:1.8rem;
+}
+
+.product-card{
+    background:white;
+    border-radius:1.5rem;
+    padding:1.3rem;
+    transition:.25s;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    border:1px solid rgba(0,0,0,.05);
+    text-align:center;
+    display:block;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 25px -12px rgba(0,0,0,.15);
+    border-color:#dce5f0;
+}
+
+.product-img{
+    font-size:4rem;
+    margin-bottom:.8rem;
+}
+
+.product-card h3{
+    font-size:1.25rem;
+    font-weight:600;
+    color:#1a2634;
+    margin:.5rem 0;
+}
+
+.category-badge{
+    display:inline-block;
+    background:#eef2ff;
+    padding:.2rem .8rem;
+    border-radius:20px;
+    font-size:.7rem;
+    font-weight:600;
+    color:#2c3e66;
+    margin:.5rem 0;
+    text-transform:uppercase;
+    letter-spacing:.3px;
+}
+
+.price{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#1f2a44;
+    margin:.6rem 0;
+}
+
+.btn-detail{
+    background:#f0f3f8;
+    border:none;
+    padding:.6rem 1.2rem;
+    border-radius:2rem;
+    font-weight:500;
+    color:#2c3e66;
+    cursor:pointer;
+    transition:.2s;
+    margin-top:.3rem;
+}
+
+.btn-detail:hover{
+    background:#2c3e66;
+    color:white;
+}
+
+.filters-system:has(input[value="Bolsos"]:checked) ~ .catalog-grid .product-card:not([data-category="Bolsos"]),
+.filters-system:has(input[value="Botellas"]:checked) ~ .catalog-grid .product-card:not([data-category="Botellas"]),
+.filters-system:has(input[value="Kits"]:checked) ~ .catalog-grid .product-card:not([data-category="Kits"]),
+.filters-system:has(input[value="Varios"]:checked) ~ .catalog-grid .product-card:not([data-category="Varios"]){
+    display:none;   
+}
+
+.filters-system:has(input[value="all"]:checked) ~ .catalog-grid .product-card{
+    display:block;
+}
+
+
+img{
+    width: 100%;
+    
 }

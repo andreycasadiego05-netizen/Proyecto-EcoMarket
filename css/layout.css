@@ -110,17 +110,108 @@ section{
     margin: 0 auto;
     padding: 100px;
 }
+
+section img{
+    border-radius: 15px;
+    width: 35%;
+}
+
+section font{
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.7 px;
+    text-align: justify;
+}
+
 main{
     background: rgb(72, 86, 68);
 
 }
 
 .fondo{
-    background: linear-gradient(rgb(72, 86, 68),black);
-    padding: 30%;
+    background-color: (rgb(72, 86, 68));
+
 }
 
 footer{
-    background-color: rgb(0, 0, 0);
-    padding: 100px;
+    padding: 10px;
+    background-color: rgb(54, 66, 51);
+    text-align: center;
+    color: white;
+}
+.contacto-descripcion{
+    text-align: center;
+    font-size: 1.05rem;
+    color: rgb(58, 94, 57);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contacto-opciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.contacto-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 22px;
+    border-radius: 18px;
+    text-decoration: none;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+    
+}
+
+.contacto-item:hover{
+    transform: translateY(-5px) scale(1.01);
+    background: rgba(219, 219, 219, 0.616);
+    border-color: #22c55e;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.contacto-info{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #4b6448, #86a391);
+    box-shadow: 0 5px 15px rgba(34,197,94,0.4);
+}
+
+.contacto-item h4{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.texto{
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+.flecha{
+    font-size: 1.3rem;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.contacto-item:hover .flecha{
+    transform: translateX(6px);
+    opacity: 1;
 }
