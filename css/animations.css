@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -28,21 +29,31 @@
 }
 
 @keyframes girar {
-    from{
-        transform: rotate(0deg);
-    }
-
-    to{
-        transform: rotate(360deg);
-    }
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
 }
 
 @keyframes ocultar {
-    0%,80%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
+    0%,80%{ opacity: 1; }
+    100%{ opacity: 0; visibility: hidden; }
 }
+
+/* --- Utilities de animación reutilizables --- */
+.fade-in{ opacity: 0; animation: fadeIn 0.6s ease forwards; }
+@keyframes fadeIn{ from{opacity:0; transform: translateY(8px);} to{opacity:1; transform: translateY(0);} }
+
+.slide-up{ opacity: 0; animation: slideUp 0.7s ease forwards; }
+@keyframes slideUp{ from{opacity:0; transform: translateY(20px);} to{opacity:1; transform: translateY(0);} }
+
+.zoom-in{ opacity: 0; transform: scale(.98); animation: zoomIn 0.6s cubic-bezier(.2,.8,.2,1) forwards; }
+@keyframes zoomIn{ from{opacity:0; transform: scale(.98);} to{opacity:1; transform: scale(1);} }
+
+.pulse{ transition: transform .15s ease; }
+.pulse:hover{ transform: scale(1.04); }
+
+.float{ animation: float 3.5s ease-in-out infinite; }
+@keyframes float{ 0%{transform: translateY(0);}50%{transform: translateY(-6px);}100%{transform: translateY(0);} }
+
+
+.product-card, .card{ opacity:0; animation: fadeIn .55s ease forwards; }
+.boton{ transition: transform .12s ease; }
