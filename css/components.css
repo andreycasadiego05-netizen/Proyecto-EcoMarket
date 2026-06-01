@@ -263,8 +263,16 @@
 }
 
 .product-img{
-    font-size:4rem;
-    margin-bottom:.8rem;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+.product-img img{
+    width:50%;
+    object-fit:contain;
+    
 }
 
 .product-card h3{
@@ -313,8 +321,7 @@
 
 .filters-system:has(input[value="Bolsos"]:checked) ~ .catalog-grid .product-card:not([data-category="Bolsos"]),
 .filters-system:has(input[value="Botellas"]:checked) ~ .catalog-grid .product-card:not([data-category="Botellas"]),
-.filters-system:has(input[value="Kits"]:checked) ~ .catalog-grid .product-card:not([data-category="Kits"]),
-.filters-system:has(input[value="Varios"]:checked) ~ .catalog-grid .product-card:not([data-category="Varios"]){
+.filters-system:has(input[value="Kits"]:checked) ~ .catalog-grid .product-card:not([data-category="Kits"]){
     display:none;   
 }
 
@@ -323,7 +330,4 @@
 }
 
 
-img{
-    width: 100%;
-    
-}
+
