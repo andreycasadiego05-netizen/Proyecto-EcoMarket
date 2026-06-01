@@ -228,3 +228,45 @@ footer{
     box-sizing: border-box;
 
 }
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+        padding:10px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .logo,
+    .icons{
+        width:auto;
+    }
+
+    .hero-content{
+        margin: 20px;
+        text-align: center;
+    }
+
+    section{
+        flex-direction:column;
+        padding:20px;
+        width:auto;
+    }
+
+    footer{
+        font-size:0.9rem;
+    }
+
+     .limit{
+        width:100%;
+        margin: 20px 0;
+        float:none;
+    }
+}
