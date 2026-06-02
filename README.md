@@ -1,5 +1,8 @@
 # EcoMarket 🌱
 
+## Capturas
+se ven en carpeta capturas
+
 ## Descripción
 
 EcoMarket es una plataforma web desarrollada con el propósito de promover el consumo responsable mediante la comercialización de productos ecológicos y sostenibles. El sitio ofrece una experiencia intuitiva para que los usuarios puedan explorar diferentes categorías de productos amigables con el medio ambiente, conocer sus características y contactar con la empresa para realizar pedidos o resolver dudas.
