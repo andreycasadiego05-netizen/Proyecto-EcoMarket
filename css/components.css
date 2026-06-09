@@ -46,6 +46,11 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.contacto-hover a {
+    display: flex;
+    justify-content: end;
+}
+
 .contacto-hover h1 {
     margin-bottom: 15px;
     color: #1e3f29;
@@ -498,3 +503,47 @@
     padding: 50px;
     border: #000000;
 }
+
+
+
+.modal{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99;
+
+}
+
+.section-variant{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #dbfee8;
+    width: 97%;
+    height: 97%;
+    align-content: center;
+    margin: 0 auto;
+    padding: 100px;
+}
+.modal a{
+    text-decoration: none;
+    color: #000000;
+}
+

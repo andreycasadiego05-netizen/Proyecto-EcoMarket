@@ -57,3 +57,4 @@
 
 .product-card, .card{ opacity:0; animation: fadeIn .55s ease forwards; }
 .boton{ transition: transform .12s ease; }
+
